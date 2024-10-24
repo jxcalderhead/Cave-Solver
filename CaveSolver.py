@@ -190,9 +190,9 @@ def findPathFromEntranceToExit(cave):
 
     
 
-#cave = loadCaveFromFile('alphacave.txt')
+cave = loadCaveFromFile('alphacave.txt')
 #cave = loadCaveFromFile('betacave.txt')
-cave = loadCaveFromFile('gammacave.txt')
+#cave = loadCaveFromFile('gammacave.txt')
 #cave = loadCaveFromFile('epsiloncave.txt')
 print("Cave:", cave)
 #entrance = []
