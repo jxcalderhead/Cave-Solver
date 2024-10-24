@@ -125,6 +125,8 @@ def findPathFromEntranceToExit(cave):
 
     while path:
         print("Current path:", path)
+        
+        
         #check for surrounding caves
         #if yes move pick a cave and move to it
         #if no pop a cave off the stack
@@ -149,17 +151,14 @@ def findPathFromEntranceToExit(cave):
         validCaves = check(currentCave, cave, markedCaves)
 
         #delete and path
+        # IMPORTANT: Uncomment the 3 print statements to see extra information
         if validCaves:
             markedCaves.append(currentCave)
-            print("valid caves:", validCaves)
-            print("current cave:", currentCave)
+            # print("valid caves:", validCaves)
+            # print("current cave:", currentCave)
             currentCave = validCaves.pop()
-            print("New current cave:", currentCave)
+            # print("New current cave:", currentCave)
             path.append(currentCave)
-            # nextCave = validCaves.pop()
-            # path.append(nextCave)
-            # markedCaves.append(currentCave)
-            # currentCave = nextCave
         else:
             #if the cave is marked don't pop
             if currentCave not in markedCaves:
@@ -190,9 +189,9 @@ def findPathFromEntranceToExit(cave):
 
     
 
-cave = loadCaveFromFile('alphacave.txt')
+#cave = loadCaveFromFile('alphacave.txt')
 #cave = loadCaveFromFile('betacave.txt')
-#cave = loadCaveFromFile('gammacave.txt')
+cave = loadCaveFromFile('gammacave.txt')
 #cave = loadCaveFromFile('epsiloncave.txt')
 print("Cave:", cave)
 #entrance = []
