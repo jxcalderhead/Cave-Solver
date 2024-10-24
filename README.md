@@ -1,12 +1,12 @@
-#Cave Solver
+# Cave Solver
 This program was created for my Algorithms class at Malone University (fall 2023).
 This program takes in a text file of a maze layout (detailed below) and spits out the path to solve the maze or tells the user the maze isn't solvable.
 
-##How does it work?
+## How does it work?
 input: a text file with the following structure
 
-XZX
-X A
+XZX\
+X A\
 XXX
 
 Where
